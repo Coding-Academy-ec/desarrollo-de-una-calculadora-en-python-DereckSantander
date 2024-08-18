@@ -8,7 +8,8 @@ def multiplicar(a, b):
     return a*b# aqui se realiza la multiplicacion de dos numeros
 
 def dividir(a, b):
-    return a/b # aqui se realiza la division de dos numeros
+    
+    return a/b if b>0 else f"Error: No se puede dividir por cero" # aqui se realiza la division de dos numeros
 
 def main():
     num1 = float(input("Ingrese el primer número: "))
